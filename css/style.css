@@ -1,9 +1,15 @@
 body {
-    background-color: rgb(177, 216, 231);
+    background-color: rgba(236, 250, 252, 0.8) !important;
 }
 
 h1 {
+    font-family: 'Overlock', cursive;
     font-size: 40px;
+    color: rgb(8, 80, 109);
+}
+
+.title {
+    font-size: 60px;
     font-family: 'Fascinate Inline', cursive;
     color: rgb(10, 10, 75);
 }
@@ -14,93 +20,36 @@ p {
     color: rgb(8, 80, 109);
 }
 
-.aboutme {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 5% 70% 25%;
-    grid-template-areas: 
-    "header header header"
-    "side bio bio"
-    "socials bio bio"
-    ;
-}
-
-.side {
-    grid-area: side;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    height: 600px;
-    align-items: center;
-}
-
-.media {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    list-style: none;
-    font-family: 'Noto Sans', sans-serif;
-}
-
-.socials {
-    grid-area: socials;
-    width: 400px;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.socials p {
+.jumbotron {
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: translate(20px, 25px);
+    background-image: url(../images/water.jpg);
+}
+.jumboLeft {
+    width: 70%;
+    padding: 0px 0px 0px 5%; 
+    
 }
 
-.bio {
-    grid-area: bio;
-    padding: 50px;
-    width: 80%;
-    transform: translateY(-30px);
+.jumboRight{
+    width: 50%;
+    margin-left: 20px;
+
 }
 
-.card {
-    width: 150px;
-    height: 150px;
-    border: 3px solid rgba(255, 251, 251, 0.8);
-    border-radius: 50%;
-    transform: translateY(-10px);
-    color: rgb(8, 80, 109);
+#img1 {
+    width: 70%;
+    float: center;
+    border-radius: 80%;
+    transform: translateX(20%);
 }
 
 
 
-.bio h1 {
-    font-size: 60px;
-}
-
-.bio p {
-    transform: translateY(-30px);
-}
-
-h2 {
-    font-family: 'Overlock', cursive;
-    font-size: 19px;
-    padding: 11px;
-    text-align: center;
-    transform: translateY(10px)
-}
-
-.header {
-    grid-area: header;
-}
-
-.header h1 {
+h3 {
     display: flex;
-    justify-content: flex-start;
-    padding: 10px;
-    margin: 20px;
-    border-bottom: 5px solid rgba(255, 251, 251, 0.8);
+    justify-content: center;
 }
 
 #pic1 {
@@ -110,13 +59,92 @@ h2 {
     width: 350px;
     height: 350px;
     border-radius: 50%;
-    transform: translate(20px,20px)
 }
 
-.below {
+.webRedesign {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+
+.cardContainer {
+    margin-top: 20px;
+    text-align: center;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
-    transform: translate(-20px);
+}
+
+.work {
+    margin-bottom: 15px;
+    padding: 0px 0px 30px 0px;
+}
+
+.card {
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: navy;
+}
+
+.aboutme {
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.bio {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 30px;
+    margin-right: 20px;
+}
+
+.side {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-nav {
+    margin-left: auto;
+    margin-right: 0 !important;
+    padding-right: 1.25rem;
+  }
+
+.nav-item {
+    margin: 0px 15px;
+  }
+
+.navbar-brand {
+    padding-left: 2rem;
+  }
+
+.customNav {
+    position: fixed;
+    width: 100%;
+    background: url(../images/navy.jpg);
+    background-color: transparent !important;
+    background-size: cover;
+    z-index: 10;
+}
+
+.customNav a {
+    color: white !important;
+  }
+
+.bio h5 {
+    font-family: 'Overlock', cursive;
+    font-size: 40px;
+    color: rgb(8, 80, 109);
+}
+
+.bio h6 {font-size: 40px;
+    font-family: 'Fascinate Inline', cursive;
+    color: rgb(10, 10, 75);
 }
